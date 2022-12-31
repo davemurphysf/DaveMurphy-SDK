@@ -1,0 +1,19 @@
+{
+    "compilerOptions": {
+        "allowSyntheticDefaultImports": true,
+        "declaration": true,
+        "declarationMap": true,
+        "esModuleInterop": true,
+        "forceConsistentCasingInFileNames": true,
+        "module": "CommonJS",
+        "moduleResolution": "Node",
+        "outDir": "dist/main",
+        "rootDir": "src",
+        "sourceMap": true,
+        "strict": true,
+        "stripInternal": true,
+        "target": "ES2015"
+    },
+    "include": ["src"],
+    "exclude": ["node_modules/**/*.ts"]
+}
