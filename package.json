@@ -14,6 +14,7 @@
     ],
     "main": "dist/main/index.js",
     "module": "dist/module/index.js",
+    "types": "dist/module/index.d.ts",
     "repository": "davemurphysf/liblab",
     "scripts": {
         "clean": "rimraf dist",
