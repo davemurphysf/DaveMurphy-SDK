@@ -1,6 +1,6 @@
 {
     "name": "@davemurphysf/liblab",
-    "version": "0.0.2",
+    "version": "0.0.3",
     "description": "Isomorphic Javascript client for The One API",
     "license": "MIT",
     "author": "Dave Murphy <dave.w.murphy@gmail.com>",
