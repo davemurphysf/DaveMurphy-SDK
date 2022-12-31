@@ -1,6 +1,5 @@
 import { createClient, TheOneClient } from '../src/index';
 
-const URL = 'http://localhost:3000';
 const KEY = 'some.fake.key';
 
 const client = createClient(KEY);

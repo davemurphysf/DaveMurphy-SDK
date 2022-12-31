@@ -9,6 +9,11 @@ import {
     TheOneClientOptions,
 } from './lib/types';
 
+/**
+ * The One Client
+ *
+ * Isomorphic client for calling The One API
+ */
 export default class TheOneClient {
     protected authKey: string;
     protected shouldThrowOnError: boolean;
