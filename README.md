@@ -35,7 +35,7 @@ const movies = await theOneClient.listMovies();
 An optional second parameter can be passed to `createClient` in the form of an object with the following keys (values):
 
 -   `shouldThrowOnError` (boolean): Whether the client should throw an exception when an error is returned from the API or whether it should set `ok` to false and populate the `metadata.error` field instead
--   `fetch` (Fetch): The SDK uses the [`cross-fetch`](https://www.npmjs.com/package/cross-fetch) library to make HTTP requests, but an alternative `fetch` implementation can be provided as an option (perhaps for Cloudflare Workers).
+-   `fetch` (Fetch): The SDK uses the [`cross-fetch`](https://www.npmjs.com/package/cross-fetch) library to make HTTP requests for both browser and Node environments, but an alternative fetch implementation can be provided as an option (perhaps for Cloudflare Workers).
 
 ```js
 import { createClient } from '@davemurphysf/liblab';
@@ -56,9 +56,9 @@ async listMovies(limit: number = 100, page?: number, offset?: number) : Promise<
 
 Params:
 
--   limit (optional): Maximum number of results to return
--   page (optional): Which page to start returning items
--   offset (optional): The number of results to skip before returning
+-   `limit` (optional): Maximum number of results to return
+-   `page` (optional): Which page to start returning items
+-   `offset` (optional): The number of results to skip before returning
 
 ```ts
 async getMovie(movieId: string) : Promise<ApiResponse>
@@ -68,7 +68,7 @@ async getMovie(movieId: string) : Promise<ApiResponse>
 
 Params:
 
--   movieId: the id of the specific movie to fetch
+-   `movieId`: the id of the specific movie to fetch
 
 ```ts
 async getMovieQuotes(movieId: string, limit: number = 100, page?: number, offset?: number) : Promise<ApiResponse>
@@ -78,10 +78,10 @@ async getMovieQuotes(movieId: string, limit: number = 100, page?: number, offset
 
 Params:
 
--   movieId: the id of the specific movie to fetch
--   limit (optional): Maximum number of results to return
--   page (optional): Which page to start returning items
--   offset (optional): The number of results to skip before returning
+-   `movieId`: the id of the specific movie to fetch
+-   `limit` (optional): Maximum number of results to return
+-   `page` (optional): Which page to start returning items
+-   `offset` (optional): The number of results to skip before returning
 
 ## Types
 
