@@ -1,13 +1,9 @@
 {
     "name": "@davemurphysf/liblab",
-    "version": "0.0.1",
+    "version": "0.0.2",
     "description": "Isomorphic Javascript client for The One API",
-    "keywords": [
-        "javascript",
-        "typescript"
-    ],
     "license": "MIT",
-    "author": "Dave Murphy",
+    "author": "Dave Murphy <dave.w.murphy@gmail.com>",
     "files": [
         "dist",
         "src"
@@ -15,7 +11,10 @@
     "main": "dist/main/index.js",
     "module": "dist/module/index.js",
     "types": "dist/module/index.d.ts",
-    "repository": "davemurphysf/liblab",
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/davemurphysf/DaveMurphy-SDK.git"
+    },
     "scripts": {
         "clean": "rimraf dist",
         "coverage": "jest --runInBand --coverage",
@@ -44,5 +43,9 @@
         "hooks": {
             "pre-commit": "pretty-quick --staged"
         }
-    }
+    },
+    "bugs": {
+        "url": "https://github.com/davemurphysf/DaveMurphy-SDK/issues"
+    },
+    "homepage": "https://github.com/davemurphysf/DaveMurphy-SDK"
 }
